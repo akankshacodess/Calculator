@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@400;500;600;700;800&family=Karla:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="calculator-solid (2).svg">
+    <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/92848cb6ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calcContainer">
+            <div class="calcHeading">CALCULATOR</div>
+            <div class="displayContainer">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="inputButtons">
+                <div class="calcButtonRow">
+                    <button class="btn operatorBtn2 double" onclick="cleared()">C</button>
+                    <button class="btn operatorBtn2" onclick="backspace()"><img width="25" height="25" src="https://img.icons8.com/ios/50/clear-symbol--v1.png" alt="clear-symbol--v1"/></button>
+                    <button class="btn operatorBtn" onclick="appendCharacter('/')">&divide;</button>
+                </div>
+                <div class="calcButtonRow">
+                    <button class="btn" onclick="appendCharacter('7')">7</button>
+                    <button class="btn" onclick="appendCharacter('8')">8</button>
+                    <button class="btn" onclick="appendCharacter('9')">9</button>
+                    <button class="btn operatorBtn" onclick="appendCharacter('*')">*</button>
+                </div>
+                <div class="calcButtonRow">
+                    <button class="btn" onclick="appendCharacter('4')">4</button>
+                    <button class="btn" onclick="appendCharacter('5')">5</button>
+                    <button class="btn" onclick="appendCharacter('6')">6</button>
+                    <button class="btn operatorBtn" onclick="appendCharacter('-')">&minus;</button>
+                </div>
+                <div class="calcButtonRow">
+                    <button class="btn" onclick="appendCharacter('1')">1</button>
+                    <button class="btn" onclick="appendCharacter('2')">2</button>
+                    <button class="btn" onclick="appendCharacter('3')">3</button>
+                    <button class="btn operatorBtn" onclick="appendCharacter('+')">&plus;</button>
+                </div>
+                <div class="calcButtonRow">
+                    <button class="btn double" onclick="appendCharacter('0')">0</button>
+                    <button class="btn double operatorBtn" onclick="calc()">&equals;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
